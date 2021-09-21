@@ -2,7 +2,7 @@
 
 
 
-The step-by-step instruction and results are captured with screenshots and can be downloaded as [PDF](T101389-Scenario1-v20210920.pdf) or [PPT](T101389-Scenario1-v20210920.pptx)
+The step-by-step instruction and results are captured with screenshots and can be downloaded as [PDF](recording/T101389-Scenario1-v20210920.pdf) or [PPT](recording/T101389-Scenario1-v20210920.pptx)
 
 
 
@@ -63,4 +63,7 @@ Use the query builder to search for the dataset:
 
 Once the dataset is found and displayed, select those that meet the criteria of a new dataset to be custom-tagged. In our case shown in the recording, we select all 11 images for tagging. We'll use tag "udc-dem2" and value "T101389-s1" to create the custom-tag and this way we can easily find this dataset in the future. 
 
+An example disply of tagged and searched dataset is shown below: 
+
+<img src=recording/T101389-Scenario1-result.png>
 

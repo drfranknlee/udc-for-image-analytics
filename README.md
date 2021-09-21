@@ -10,7 +10,7 @@ This repository includes instruction, dataset, manifest and recording to recreat
 ### About Dataset
 The dataset is a collection of 11 military aircraft images from [Kaggle](https://www.kaggle.com/a2015003713/militaryaircraftdetectiondataset/version/29). Here is an example aircraft image from the dataset:
 
-<img src=set-T101389/dataset/00b2add164cb42440a52064e390ea3d2.jpg>
+<img src=scenario2/dataset/annotated/00b2add164cb42440a52064e390ea3d2.jpg>
 
     - width: 1280
     - height: 850	
