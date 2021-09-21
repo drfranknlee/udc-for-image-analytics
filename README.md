@@ -12,9 +12,14 @@ The instruction below uses the dataset in "set-T101389". The raw data is a colle
 
 Upload the data in /dataset into a cloud object storage bucket (eg. "udc-vault") under the folder "T101389"
 
+Here is an example image from the dataset:
+
+[img](dataset/00b2add164cb42440a52064e390ea3d2.jpg)
+
+
 Upload the manifest in /manifest into the same bucket and folder
 
-> You can use your own dataset as long as the path to each file/object in the object storage bucket is updated
+> Note: You can use your own dataset as long as the path to each file/object in the object storage bucket is updated
 
 
 ### Step 2: Scan the source using Spectrum Discover
