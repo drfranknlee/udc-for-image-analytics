@@ -7,10 +7,20 @@ Spectrum Discover is an industry-leading unstructured data catalog platform that
 This repository includes instruction, dataset, manifest and recording to recreate a demo based on Spectrum Discover to ingest, index, tag and extract insight from a military aircraft dataset. The output is a well-curated and easily-accessible dataset ready for HPC-based preprocessing and deep learning/AI training. 
 
 
-The instruction below uses the dataset in "set-T101389". The raw data is a collection of 11 military aircraft images from [Kaggle](https://www.kaggle.com/a2015003713/militaryaircraftdetectiondataset/version/29). Here is an example aircraft image from the dataset:
+### About Dataset
+The dataset is a collection of 11 military aircraft images from [Kaggle](https://www.kaggle.com/a2015003713/militaryaircraftdetectiondataset/version/29). Here is an example aircraft image from the dataset:
 
 <img src=set-T101389/dataset/00b2add164cb42440a52064e390ea3d2.jpg>
 
+    - width: 1280
+    - height: 850	
+    - type: B1	
+    - xmin: 322	
+    - ymin: 112	
+    - xmax: 893	
+    - ymax: 618
 
 
-### [Scenario 1: Index Dataset & Enrich Catalog with Metadata Import](scenario1/index.md)
+
+
+### [Scenario 1: Scenario 1: Index Dataset & Prepare Catalog](scenario1/index.md)

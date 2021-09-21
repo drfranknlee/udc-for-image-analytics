@@ -1,10 +1,10 @@
 {
-        "pol_id": "T101389_aircraft_import_pol",
+        "pol_id": "T101389_aircraft_import_scenario1_pol",
         "action_id": "IMPORT_TAGS",
         "action_params": {
                 "agent":"ImportTags",
                 "source_connection":"UDSt-CoS",
-                "tag_file_path":"udc-vault/T101389/T101389-aircraft-manifest.csv",
+                "tag_file_path":"udc-vault/T101389/scenario1/T101389-aircraft-manifest-scenario1.csv",
                 "tag_file_type":"csv"
         },
         "schedule": "NOW",
