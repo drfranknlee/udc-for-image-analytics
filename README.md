@@ -12,8 +12,5 @@ The instruction below uses the dataset in "set-T101389". The raw data is a colle
 <img src=set-T101389/dataset/00b2add164cb42440a52064e390ea3d2.jpg>
 
 
-The step-by-step instruction and results are captured with screenshots and can be downloaded as [PDF](set-T101389/recording/T101389-Scenario1-v20210920.pdf) or [PPT](set-T101389/recording/T101389-Scenario1-v20210920.pptx)
 
-
-
-### [Scenario 1: Index Dataset & Enrich Catalog with Metadata Import](Scenario1.md)
+### [Scenario 1: Index Dataset & Enrich Catalog with Metadata Import](scenario1/index.md)
