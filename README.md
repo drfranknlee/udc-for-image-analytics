@@ -3,5 +3,57 @@
 
 This repository includes instruction and manifest to ingest and index a military aircraft dataset into Spectrum Discover. Three additional tasks can be performed to custom-tag, extract-tag, import-tag to enrich the data catalog. 
 
+Instruction: 
+ - We'll represent dataset "set-T101389" below as <ds>
+
+
+### Step 1: Upload dataset and manifest
+
+Upload the data in <ds>/dataset into a cloud object storage bucket (eg. "udc-vault")
+
+Upload the manifest in <ds>/manifest into the same bucket
+
+
+### Step 2: Scan the source using Spectrum Discover
+
+
+### Step 3: Set up Tag-import Policy in Spectrum Discover
+
+Log into the Spectrum Discover server
+
+Create the policy json file as following
+
+    {
+            "pol_id": "T101389_aircraft_import_pol",
+            "action_id": "IMPORT_TAGS",
+            "action_params": {
+                    "agent":"ImportTags",
+                    "source_connection":"UDSt-CoS",
+                    "tag_file_path":"udc-vault/T101389-aircraft-manifest.csv",
+                    "tag_file_type":"csv"
+            },
+            "schedule": "NOW",
+            "pol_state": "active",
+            "pol_filter": "datasource IN ('udc-vault')"
+    }
+
+
+Run two commands from CLI:
+
+    gettoken
+
+    curl -k -H "Authorization: Bearer ${TOKEN}" https://localhost/policyengine/v1/policies/T101389_aircraft_import_pol -X POST -d @./T101389_aircraft_import.json -H "Content-Type: application/json"
+
+
+This will create a Spectrum Discover metadata policy "IMPORT_TAGS" named "T101389_aircraft_import_pol". The policy will also be executed automatically. 
+
+
+
+
+
+
+
+
+
 
 Source of data: https://www.kaggle.com/a2015003713/militaryaircraftdetectiondataset/version/29
