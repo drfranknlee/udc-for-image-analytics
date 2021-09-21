@@ -51,7 +51,7 @@ This will create a Spectrum Discover metadata policy "IMPORT_TAGS" named "T10138
 ## 3: Use the Enriched Data Catalog
 
 
-#### 3.1 Find or browse the newly-imported metadata 
+### 3.1 Find or browse the newly-imported metadata 
 
 Use the query builder to search for the dataset: 
 
@@ -63,14 +63,14 @@ The serach result is shown below. Note that we can now show additional matadata 
 <img src=recording/T101389-Scenario2-importtagresult.png>
 
 
-#### 3.2 Custom-tag the new dataset
+### 3.2 Custom-tag the new dataset
 
 Once the dataset is found and displayed, select those that meet the criteria of a new dataset to be custom-tagged. In our case shown in the recording, we will select all 22 images for tagging. We'll use tag "udc-dem3" and value "T101389-s2" to create the the new dataset. 
 
 <img src=recording/T101389-Scenario2-customtag.png>
 
 
-#### 3.3 Use Visual Query to browse new dataset
+### 3.3 Use Visual Query to browse new dataset
 
 With these newly-available tags such as u2-type, u2-id etc, we can now go to Spectrum Discover Visual Query search panel to browse for the type and quantities of data in each group/metrics. 
 
@@ -78,7 +78,7 @@ With these newly-available tags such as u2-type, u2-id etc, we can now go to Spe
 <img src=recording/T101389-Scenario2-visualsearchtype.png>
 
 
-#### 3.4 Custom-tag the new dataset
+### 3.4 Custom-tag the new dataset
 
 In Spectrum Discover, we can now also pull up a pair of images (raw and annotated) based on their image ID tag "ud-id"
 
