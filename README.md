@@ -1,10 +1,16 @@
 # Demo -- Unified Data Catalog for Military Aircraft
 
 
-This repository includes instruction and manifest to ingest and index a military aircraft dataset into Spectrum Discover. Three additional tasks can be performed to custom-tag, extract-tag, import-tag to enrich the data catalog. 
+Spectrum Discover is an industry-leading unstructured data catalog platform that can be plugged into by various applications and tools for data discovery services. 
+
+
+This repository includes instruction, dataset, manifest and recording to recreate a demo based on Spectrum Discover to ingest, index, tag and extract insight from a military aircraft dataset. The output is a well-curated and easily-accessible dataset ready for HPC-based preprocessing and deep learning/AI training. 
 
 
 The instruction below uses the dataset in "set-T101389". The raw data is a collection of 11 military aircraft images from https://www.kaggle.com/a2015003713/militaryaircraftdetectiondataset/version/29
+
+
+The step-by-step instruction and results are captured with screenshots and can be downloaded as [PDF](set-T101389/recording/T101389-Scenario1-v20210920.pdf) or [PPT](set-T101389/recording/T101389-Scenario1-v20210920.pptx)
 
 
 
@@ -27,7 +33,8 @@ Upload the manifest in /manifest into the same bucket and folder
 
 ### Step 3: Set up Tag-import Policy in Spectrum Discover
 
-Log into the Spectrum Discover server
+SSH log into the Spectrum Discover server. If you cannot gain SSH access to the server, you can still create the policy by using the Spectrum Discover RESTful API after obtaining the token. Please consult the [Spectrum Discover Documentation](https://www.ibm.com/docs/en/spectrum-discover)
+
 
 Create the policy json file as following
 
@@ -37,7 +44,7 @@ Create the policy json file as following
             "action_params": {
                     "agent":"ImportTags",
                     "source_connection":"UDSt-CoS",
-                    "tag_file_path":"udc-vault/T101389-aircraft-manifest.csv",
+                    "tag_file_path":"udc-vault/T101389/T101389-aircraft-manifest.csv",
                     "tag_file_type":"csv"
             },
             "schedule": "NOW",
