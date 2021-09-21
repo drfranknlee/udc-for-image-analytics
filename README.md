@@ -3,15 +3,18 @@
 
 This repository includes instruction and manifest to ingest and index a military aircraft dataset into Spectrum Discover. Three additional tasks can be performed to custom-tag, extract-tag, import-tag to enrich the data catalog. 
 
-Instruction: 
- - We'll represent dataset "set-T101389" below as <ds>
+
+The instruction below uses the dataset in "T101389". 
+
 
 
 ### Step 1: Upload dataset and manifest
 
-Upload the data in <ds>/dataset into a cloud object storage bucket (eg. "udc-vault")
+Upload the data in /dataset into a cloud object storage bucket (eg. "udc-vault") under the folder "T101389"
 
-Upload the manifest in <ds>/manifest into the same bucket
+Upload the manifest in /manifest into the same bucket and folder
+
+> You can use your own dataset as long as the path to each file/object in the object storage bucket is updated
 
 
 ### Step 2: Scan the source using Spectrum Discover
