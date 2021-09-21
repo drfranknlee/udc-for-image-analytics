@@ -14,7 +14,7 @@ Upload the data in /dataset into a cloud object storage bucket (eg. "udc-vault")
 
 Here is an example image from the dataset:
 
-<img src=dataset/00b2add164cb42440a52064e390ea3d2.jpg>
+<img src=set-T101389/dataset/00b2add164cb42440a52064e390ea3d2.jpg>
 
 
 Upload the manifest in /manifest into the same bucket and folder
