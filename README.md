@@ -4,7 +4,7 @@
 This repository includes instruction and manifest to ingest and index a military aircraft dataset into Spectrum Discover. Three additional tasks can be performed to custom-tag, extract-tag, import-tag to enrich the data catalog. 
 
 
-The instruction below uses the dataset in "T101389". 
+The instruction below uses the dataset in "set-T101389". The raw data is a collection of 11 military aircraft images from https://www.kaggle.com/a2015003713/militaryaircraftdetectiondataset/version/29
 
 
 
@@ -54,9 +54,3 @@ This will create a Spectrum Discover metadata policy "IMPORT_TAGS" named "T10138
 
 
 
-
-
-
-
-
-Source of data: https://www.kaggle.com/a2015003713/militaryaircraftdetectiondataset/version/29
