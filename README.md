@@ -11,6 +11,7 @@ This repository includes instruction, dataset, manifest and recording to recreat
 The dataset is a collection of 11 military aircraft images from [Kaggle](https://www.kaggle.com/a2015003713/militaryaircraftdetectiondataset/version/29). Here is an example aircraft image from the dataset:
 
 <img src=scenario2/dataset/annotated/00b2add164cb42440a52064e390ea3d2.jpg>
+
     - width: 1280
     - height: 850	
     - type: B1	
@@ -22,4 +23,5 @@ The dataset is a collection of 11 military aircraft images from [Kaggle](https:/
 
 ### Multi-scenario Demo
 
- - [Scenario 1: Scenario 1: Index Dataset & Prepare Catalog](scenario1/index.md)
+ - [Scenario 1: Index Dataset & Prepare Catalog](scenario1/index.md)
+ - [Scenario 2: Index & Tag Multi-dimensional Dataset](scenario2/index.md)
