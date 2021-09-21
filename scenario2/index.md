@@ -13,6 +13,7 @@ Upload the new dataset "T101389-s2" manifest from local /dataset directory to "/
 > Note: You can use your own dataset as long as the path to each file/object in the object storage bucket is updated
 
 
+
 ## 2: Set up Tag-import Policy in Spectrum Discover
 
 SSH log into the Spectrum Discover server. If you cannot gain SSH access to the server, you can still create the policy by using the Spectrum Discover RESTful API after obtaining the token. Please consult the [Spectrum Discover Documentation](https://www.ibm.com/docs/en/spectrum-discover)
@@ -43,6 +44,8 @@ Run two commands from CLI:
 
 
 This will create a Spectrum Discover metadata policy "IMPORT_TAGS" named "T101389_aircraft_import_scenario2_pol". The policy will also be executed automatically. 
+
+
 
 
 ## 3: Use the Enriched Data Catalog
