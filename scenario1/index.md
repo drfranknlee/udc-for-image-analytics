@@ -78,3 +78,7 @@ An example disply of tagged and searched dataset is shown below:
 
 <img src=recording/T101389-Scenario1-customtagnewdataset.png>
 
+
+In the final step, we'll export the new T101389-s1 dataset into a manifest in [CSV file](recording/T101389-s1-manifest-v20210921.csv)
+
+<img src=recording/T101389-Scenario1-exporttomanifest.png>
