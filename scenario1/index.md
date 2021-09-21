@@ -1,6 +1,9 @@
 # Scenario 1: Index Dataset & Enrich Catalog with Metadata Import
 
 
+The step-by-step instruction and results are captured with screenshots and can be downloaded as [PDF](T101389-Scenario1-v20210920.pdf) or [PPT](T101389-Scenario1-v20210920.pptx)
+
+
 
 ### Step 1: Upload dataset and manifest
 
