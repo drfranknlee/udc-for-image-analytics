@@ -1,4 +1,4 @@
-# Scenario 1: Scenario 2: Index & Tag Multi-dimensional Dataset
+# Scenario 2: Index & Tag Multi-dimensional Dataset
 
 
 
@@ -69,7 +69,18 @@ To refine the dataset further to only those that have been annotated:
 Once the dataset is found and displayed, select those that meet the criteria of a new dataset to be custom-tagged. In our case shown in the recording, we select or find all 11 images that have been annotated for tagging. We'll use tag "udc-dem2" and value "T101389-s2" to create the custom-tag and this way we can easily find this dataset in the future. 
 
 
-An example disply of tagged dataset is shown below. Note that we can now show additional matadata such as the dimensions of the bounding box for the aircraft, as well as the image ID that we assigned to the pair (raw and annotated). 
+An example disply of tagged dataset is shown below. Note that we can now show additional matadata such as the dimensions of the bounding box for the aircraft as well as image ID that we assigned to them. 
 
 <img src=recording/T101389-Scenario2-result.png>
 
+
+In Spectrum Discover, we can now also pull up a pair of images (raw and annotated) based on their image ID tag "ud-id"
+
+    u2-id LIKE ('%T101389-10005%')
+
+
+See the resulting display of the pair of data in the catalog, and the images superimposed next to each other with the bounding box for the annotated one. 
+
+<img src=recording/T101389-Scenario2-finding-pair-1.png>
+
+<img src=recording/T101389-Scenario2-finding-pair-2.png>
