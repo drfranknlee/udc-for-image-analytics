@@ -21,7 +21,7 @@ The dataset is a collection of 11 military aircraft images from [Kaggle](https:/
     - ymax: 618
 
 
-### Multi-scenario Demo
+### Demo Listings
 
  - [Scenario 1: Index Dataset & Prepare Catalog](scenario1/index.md)
- - [Scenario 2: Index & Tag Multi-dimensional Dataset](scenario2/index.md)
+ - [Scenario 2: Import Metadata to Enrich Catalog](scenario2/index.md)

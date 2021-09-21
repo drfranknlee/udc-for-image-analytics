@@ -1,4 +1,4 @@
-# Scenario 2: Catalog Multi-dimensional Dataset
+# Scenario 2: Import Metadata to Enrich Catalog
 
 
 
