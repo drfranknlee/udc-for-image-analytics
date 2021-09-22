@@ -1,0 +1,10 @@
+curl -X 'POST' \
+  'http://max-object-detector-app-max-od.utex-ocp23-087f1b5ad0f770c98b8048ce098b9d43-0000.us-south.containers.appdomain.cloud/model/predict?threshold=0.7' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'image=@./20210727_172003076_iOS.jpg;type=image/jpg'
+
+
+Results: 
+
+{"status": "ok", "predictions": [{"label_id": "3", "label": "car", "probability": 0.9613663554191589, "detection_box": [0.5618528723716736, 0.6739007234573364, 0.8922255635261536, 0.9937855005264282]}, {"label_id": "1", "label": "person", "probability": 0.8162546753883362, "detection_box": [0.5517073273658752, 0.9598448276519775, 0.6610316634178162, 0.9913349151611328]}]}
