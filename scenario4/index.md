@@ -12,7 +12,7 @@ The example photo was taken using iPhone XR in St. Louis, Missouri on July 27th 
 
 ## 2. Extract and display the Geospatial Metadata Tags
 
-<img src=recording/T101389-Scenario4-results-with-geospatial-tags.png>
+<img src=recording/T101389-Scenario4-results-with-geospatial-tag.png>
 
 
 
