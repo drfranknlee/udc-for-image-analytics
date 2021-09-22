@@ -6,7 +6,7 @@ The step-by-step instruction and results are captured with screenshots and can b
 
 
 
-## 1 Browse Dataset for Export
+## 1. Browse Dataset for Export
 
 As images  coupled in a pair of "raw" vs "annotated" are now all tagged with the same u2-id value, we will just search for a pair of images using the Visual Query as shown. 
 
@@ -24,7 +24,7 @@ Now we can use the Export-to-WKC function to select the pair of images along wit
 <img src=recording/T101389-Scenario3-exporttowkc.png>
 
 
-## 2 Work with Exported Dataset in Cloud Pak for Data
+## 2. Work with Exported Dataset in Cloud Pak for Data
 
 
 ### 2.1 Work with Data in WKC

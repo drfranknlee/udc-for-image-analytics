@@ -7,7 +7,7 @@ The step-by-step instruction and results are captured with screenshots and can b
 
 
 
-## 1 Upload dataset and manifest
+## 1. Upload dataset and manifest
 
 In your local or public cloud account, create a cloud object storage service. Start with a new vault called udc-vault and create a folder within called "T101389". All our demo data will be uploaded into this folder. 
 
@@ -16,12 +16,12 @@ Upload the sample data and manifest files into the cloud object storage "/udc-va
 > Note: You can use your own dataset as long as the path to each file/object in the object storage bucket is updated
 
 
-## 2 Connect Spectrum Discover to Data Source
+## 2. Connect Spectrum Discover to Data Source
 Please consult the [Spectrum Discover Documentation](https://www.ibm.com/docs/en/spectrum-discover) on setting up and customizing Spectrum Discover and connecting/scanning a target data source
 
 
 
-## 3 Set up ContentSearch Policy in Spectrum Discover
+## 3. Set up ContentSearch Policy in Spectrum Discover
 
 SSH log into the Spectrum Discover server. If you cannot gain SSH access to the server, you can still create the policy by using the Spectrum Discover RESTful API after obtaining the token. Please consult the [Spectrum Discover Documentation](https://www.ibm.com/docs/en/spectrum-discover)
 
@@ -60,7 +60,7 @@ Run two commands from CLI:
 This will create a Spectrum Discover AutoTag policy named "T101389_autotag_u2source_pol". The policy will also be executed automatically. 
 
 
-## 4 Find the dataset and create custom tag
+## 4. Find the dataset and create custom tag
 
 Use the query builder to search for the dataset: 
 
