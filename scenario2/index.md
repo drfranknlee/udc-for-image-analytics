@@ -6,7 +6,7 @@ The step-by-step instruction and results are captured with screenshots and can b
 
 
 
-## 1: Upload New Dataset Manifest
+## 1 Upload New Dataset Manifest
 
 Upload the new dataset "T101389-s2" manifest from local /dataset directory to "/udc-vault/T101389/dataset/"
 
@@ -14,7 +14,7 @@ Upload the new dataset "T101389-s2" manifest from local /dataset directory to "/
 
 
 
-## 2: Set up Tag-import Policy in Spectrum Discover
+## 2 Set up Tag-import Policy in Spectrum Discover
 
 SSH log into the Spectrum Discover server. If you cannot gain SSH access to the server, you can still create the policy by using the Spectrum Discover RESTful API after obtaining the token. Please consult the [Spectrum Discover Documentation](https://www.ibm.com/docs/en/spectrum-discover)
 
@@ -48,7 +48,7 @@ This will create a Spectrum Discover metadata policy "IMPORT_TAGS" named "T10138
 
 
 
-## 3: Use the Enriched Data Catalog
+## 3 Use the Enriched Data Catalog
 
 
 ### 3.1 Find or browse the newly-imported metadata 

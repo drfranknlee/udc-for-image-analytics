@@ -6,7 +6,7 @@ The step-by-step instruction and results are captured with screenshots and can b
 
 
 
-## 1: Browse Dataset for Export
+## 1 Browse Dataset for Export
 
 As images  coupled in a pair of "raw" vs "annotated" are now all tagged with the same u2-id value, we will just search for a pair of images using the Visual Query as shown. 
 
@@ -24,7 +24,7 @@ Now we can use the Export-to-WKC function to select the pair of images along wit
 <img src=recording/T101389-Scenario3-exporttowkc.png>
 
 
-## 2: Work with Exported Dataset in Cloud Pak for Data
+## 2 Work with Exported Dataset in Cloud Pak for Data
 
 
 ### 2.1 Work with Data in WKC
@@ -55,8 +55,11 @@ In this example, you can first export the master manifest file (T101389_s2_manif
 <img src=recording/T101389-Scenario3-publish-data-from-wkc-to-ws-project.png>
 
 
-Once landed in Watson Studio, there will be many options to analyze and visualize the data asset. Here you can try Data Refinery function to analyze and visualize the manifest. 
+Once landed in Watson Studio, there will be many options to analyze and visualize the data asset. Here you can use Data Refinery function to refine the manifest. 
 
 <img src=recording/T101389-Scenario3-data-refinery-refine.png>
+
+
+Then the refined manifest can be visualized using many of the built-in graphical visualization engines
 
 <img src=recording/T101389-Scenario3-data-refinery-visualize.png>
