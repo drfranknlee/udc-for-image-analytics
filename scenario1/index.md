@@ -52,10 +52,12 @@ Create the policy json file as following
 
 Run two commands from CLI:
 
+    ```
     gettoken
 
     curl -k -H "Authorization: Bearer ${TOKEN}" https://localhost/policyengine/v1/policies/T101389_autotag_u2source_pol -X POST -d @./T101389_autotag_u2source.json -H "Content-Type: application/json"
-
+    ```
+    
 
 This will create a Spectrum Discover AutoTag policy named "T101389_autotag_u2source_pol". The policy will also be executed automatically. 
 
