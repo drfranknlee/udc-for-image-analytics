@@ -53,7 +53,7 @@ Create the policy json file as following
 Run first command to refresh the token.
 
    
-   gettoken
+    gettoken
 
 
 Run the second command to create the policy using RESTful API service.
