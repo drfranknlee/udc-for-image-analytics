@@ -3,7 +3,7 @@
 
 
 
-The step-by-step instruction and results are captured with screenshots and can be downloaded as [PDF](recording/T101389-s1-v20210921.pdf) or [PPT](recording/T101389-s1-v20210921.pptx)
+The step-by-step instruction and results are captured with screenshots and can be downloaded as [PDF](rm/T101389-s1-v20210927.pdf) or [PPT](rm/T101389-s1-v20210927.pptx)
 
 
 
@@ -87,7 +87,7 @@ An example disply of tagged and searched dataset is shown below:
 <img src=rm/T101389-s1-customtagnewdataset.png>
 
 
-In the final step, we'll export the new T101389-s1 dataset into a manifest in [CSV file](recording/T101389-s1-manifest-v20210921.csv)
+In the final step, we'll export the new T101389-s1 dataset into a manifest in [CSV file](rm/T101389-s1-manifest-v20210921.csv)
 
 <img src=rm/T101389-s1-exporttomanifest.png>
 
