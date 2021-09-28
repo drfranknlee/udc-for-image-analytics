@@ -7,7 +7,7 @@ The step-by-step instruction and results are captured with screenshots and can b
 
 
 
-## 2. Set up Spectrum Discover to Data Source
+## 1. Set up Spectrum Discover to Manage Data Sources
 Please consult the [Spectrum Discover Documentation](https://www.ibm.com/docs/en/spectrum-discover) on setting up and customizing Spectrum Discover and connecting/scanning a target data source. When all set up, you can manage the access to external data sources (S3, File Systems), initiate and review the scanning of target resources. 
 
 <img src=rm/T101389-s1-sd-data-source-management.png>
@@ -92,7 +92,7 @@ In the final step, we'll export the new T101389-s1 dataset into a manifest in [C
 <img src=rm/T101389-s1-exporttomanifest.png>
 
 
-## 5. Access to View Images Directly
+## 5. View Images Directly from Object Storage
 
 Combine the values of metadata tag "path" (ie bucket/vault) and "name" (filepath to the objects including the directories) for the full path to the images stored in the object storage bucket. The url for the object storage server or host can be located in the Spectrum Discover "Data source management" panel. In our case:
 
