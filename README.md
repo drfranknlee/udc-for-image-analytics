@@ -1,4 +1,4 @@
-# Demo - Unified Data Catalog for Aircraft Images
+# Unified Data Catalog for Image Analytics
 
 
 Spectrum Discover is an industry-leading unstructured data catalog platform that can be plugged into by various applications and tools for data discovery services. When integrated with Watson Knowledge Catalog from Cloud Pak for Data, we create a even more powerful solution for end-end cataloging of all types of data (structured, semi-structured and un-structured). This is a use case we term <B>Unified Data Catalog (UDC)</B>
