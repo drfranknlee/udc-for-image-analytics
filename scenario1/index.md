@@ -111,6 +111,15 @@ Below is the AutoTag policy:
     }
 
 
+In Spectrum Discover server, run first command to refresh token:
+
+    gettoken
+
+
+Run the second command to create the AutoTag policy:
+
+    curl -k -H "Authorization: Bearer ${TOKEN}" https://localhost/policyenginolicies/E1016404_autotag_add_field_pol -X POST -d @./E1016404_autotag_add_field_pol.json -H "Content-Type: application/json"
+
 
 In the Spectrum Discover console, you can confirm the policy has now been created and executed automatically for the first time.
 
