@@ -78,16 +78,22 @@ Once the dataset is found and displayed, take note that the tag "u2-source" is n
 <img src=rm/T101389-s1-autotagdataset.png>
 
 
-To preserve this new dataset in the platform, you'll use custom-tagging to populate "udc-dem2" with value "T101389-s1".
+To preserve this new dataset in the platform, you'll use custom-tagging to populate "u2-dataset" with value "T101389-s1".
 
 An example disply of tagged and searched dataset is shown below: 
 
 <img src=rm/T101389-s1-customtagnewdataset.png>
 
 
-You can export the new T101389-s1 dataset into a manifest in [CSV file](rm/T101389-s1-manifest-v20210921.csv)
+You can export the list of files tagged by "u2-dataset=T101389-s1" as a report in [CSV file](rm/T101389-s1-manifest-v20210928.csv)
 
 <img src=rm/T101389-s1-exporttomanifest.png>
+
+<img src=rm/T101389-s1-exporttomanifest2.png>
+
+The report is stored and can be downloaded from Spectrum Discover web console. You will use this manifest in other scenarios as a file manifest.
+
+<img src=rm/T101389-s1-04-manifest-report-stored-in-discover.png>
 
 
 ## 5. Create New Tags Based on Filters
