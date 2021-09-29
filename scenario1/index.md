@@ -1,9 +1,7 @@
-# Scenario 1: Initialize Catalog with Metadata
+# Scenario 1: Create Tags from AutoTag Policy, Custom-Tagging and Filtering
 
 
-
-
-The step-by-step instruction and results are captured with screenshots and can be downloaded as [PDF](rm/T101389-s1-v20210927.pdf) or [PPT](rm/T101389-s1-v20210927.pptx)
+The step-by-step instruction and results are captured with screenshots and can be downloaded as [PDF](rm/T101389-s1-v20210928.pdf) or [PPT](rm/T101389-s1-v20210928.pptx)
 
 
 
@@ -15,14 +13,14 @@ Please consult the [Spectrum Discover Documentation](https://www.ibm.com/docs/en
 
 ## 2. Upload Dataset to Object Storage
 
-In your local or public cloud account, create a cloud object storage service. Start with a new vault called udc-vault and create a folder within called "T101389". All our demo data will be uploaded into this folder. This object storage should be set up as a managed data source by Spectrum Discover. 
+In your local or public cloud account, create a cloud object storage service. Start with a new vault called udc-vault and create a folder within called "T101389". All your demo data will be uploaded into this folder. This object storage should be set up as a managed data source by Spectrum Discover. 
 
 <img src=rm/T101389-s1-upload-data.png>
 
 
-## 3. Set up ContentSearch Policy in Spectrum Discover
+## 3. Set up AutoTag Policy in Spectrum Discover
 
-In this step, we'll set up a Spectrum Discover ContentSearch policy to extract the image source (eg. raw vs annotated) from the path of the images and polulate the value into metadata tag named "u2-source".
+In this step, you will set up a Spectrum Discover AutoTag policy to extract the image source (eg. raw vs annotated) from the path of the images and polulate the value into metadata tag named "u2-source".
 
 
 SSH log into the Spectrum Discover server. If you cannot gain SSH access to the server, you can still create the policy by using the Spectrum Discover RESTful API after obtaining the token. Please consult the [Spectrum Discover Documentation](https://www.ibm.com/docs/en/spectrum-discover)
@@ -68,7 +66,7 @@ Run the second command to create the policy using RESTful API service.
 This will create a Spectrum Discover AutoTag policy named "T101389_autotag_u2source_pol". The policy will also be executed automatically. 
 
 
-## 4. Find the dataset and create custom tag
+## 4. Custom-tag the New Dataset
 
 Use the query builder to search for the dataset: 
 
@@ -80,19 +78,60 @@ Once the dataset is found and displayed, take note that the tag "u2-source" is n
 <img src=rm/T101389-s1-autotagdataset.png>
 
 
-To preserve this new dataset in the platform, We'll use custom-tagging to populate "udc-dem2" with value "T101389-s1".
+To preserve this new dataset in the platform, you'll use custom-tagging to populate "udc-dem2" with value "T101389-s1".
 
 An example disply of tagged and searched dataset is shown below: 
 
 <img src=rm/T101389-s1-customtagnewdataset.png>
 
 
-In the final step, we'll export the new T101389-s1 dataset into a manifest in [CSV file](rm/T101389-s1-manifest-v20210921.csv)
+You can export the new T101389-s1 dataset into a manifest in [CSV file](rm/T101389-s1-manifest-v20210921.csv)
 
 <img src=rm/T101389-s1-exporttomanifest.png>
 
 
-## 5. View Images Directly from Object Storage
+## 5. Create New Tags Based on Filters
+
+In this step, you will use AutoTage policy to create two new tags based on filtering. The filtering is a set of conditions you can specify to effectively calculate the qualifying files to be tagged. 
+
+Below is the AutoTag policy:
+
+    {
+        "pol_id": "E1016404_autotag_add_field_pol",
+        "action_id": "AUTOTAG",
+        "action_params": {		
+        "tags": {"u2-el":"E1016404", "u2-pp":"FL"}
+ 
+        },
+        "schedule": "NOW",
+        "pol_filter": "filename LIKE ('%T101389%') AND path LIKE ('%udc-vault%') AND u2-source LIKE ('%annotated%')",
+        "pol_state": "active",
+        "explicit": "true",
+        "collections": []
+    }
+
+
+
+In the Spectrum Discover console, you can confirm the policy has now been created and executed automatically for the first time.
+
+<img src=rm/E1016404-10-autotag-policy-added.png>
+
+In the Policy History tab, you can confirm that the policy has run successfully. 
+
+<img src=rm/E1016404-20-autotag-policy-run-completed.png>
+
+
+You can now use the same filtre in the policy to find the files. 
+
+<img src=rm/E1016404-30-query-for-new-dataset.png>
+
+The matched files are displayed along with the two new tags -- <B>u2-el</B> and <B>u2-pp</B>
+
+<img src=rm/E1016404-40-new-dataset-w-calculated-tag.png>
+
+
+
+## 6. View Images Directly with Calculated URL
 
 Combine the values of metadata tag "path" (ie bucket/vault) and "name" (filepath to the objects including the directories) for the full path to the images stored in the object storage bucket. The url for the object storage server or host can be located in the Spectrum Discover "Data source management" panel. In our case:
 
