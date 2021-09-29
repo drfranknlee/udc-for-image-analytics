@@ -75,11 +75,11 @@ The matched files are displayed with the tag "u2-source" showing values of "anno
 <img src=rm/T101389-s1-autotagdataset.png>
 
 
-## 4. Custom-tag the New Dataset
+## 4. Custom-tag New Dataset
 
-To preserve the newly-tagged files as a collecton (or dataset), you'll use custom-tagging to populate "u2-dataset" with value "T101389-s1". By doing so, you can find this collection of data quickly. 
+To preserve the collection of files processed by AutoTag policy above as a dataset, you'll use custom-tagging to populate "u2-dataset" tag with value "T101389-s1". By doing so, you can find this collection of data quickly. 
 
-You will select the files (ie using select-all box in this case) and click on "add tags". 
+Click on the "select all" box to pick all the files and then click on "add tags". 
 
 <img src=rm/T101389-s1-04-select-files-to-add-tags.png>
 
