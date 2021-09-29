@@ -65,22 +65,30 @@ Run the second command to create the policy using RESTful API service.
 
 This will create a Spectrum Discover AutoTag policy named "T101389_autotag_u2source_pol". The policy will also be executed automatically. 
 
-
-## 4. Custom-tag the New Dataset
-
-Use the query builder to search for the dataset: 
+Use the query builder to search for the files: 
 
     filename LIKE ('%T101389%') AND filetype LIKE ('%jpg%') 
 
 
-Once the dataset is found and displayed, take note that the tag "u2-source" is now populated with values of "annotated" or "raw". The values were extracted by AutoTag policy from the 2nd level of filename or fileppath. 
+The matched files are displayed with the tag "u2-source" showing values of "annotated" or "raw". The values were extracted by AutoTag policy from the 2nd level of filename or fileppath. 
 
 <img src=rm/T101389-s1-autotagdataset.png>
 
 
-To preserve this new dataset in the platform, you'll use custom-tagging to populate "u2-dataset" with value "T101389-s1".
+## 4. Custom-tag the New Dataset
 
-An example disply of tagged and searched dataset is shown below: 
+To preserve the newly-tagged files as a collecton (or dataset), you'll use custom-tagging to populate "u2-dataset" with value "T101389-s1". By doing so, you can find this collection of data quickly. 
+
+You will select the files (ie using select-all box in this case) and click on "add tags". 
+
+<img src=rm/T101389-s1-04-select-files-to-add-tags.png>
+
+
+Use the dialogue box to select the tag (eg "u2-dataset") and enter the value "T101389-s1":
+
+<img src=rm/T101389-s1-04-add-cutom-tag.png>
+
+The files and the newly-tagged field "u2-dataset" is displayed after refreshing the web browser: 
 
 <img src=rm/T101389-s1-customtagnewdataset.png>
 
